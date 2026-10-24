@@ -12,8 +12,6 @@
     zmk,matrix-transform = &default_transform;
     zmk,backlight = &backlight;
     zephyr,display = &oled;
-// Thêm dòng trỏ tới physical layout cho ZMK Studio
-    zmk,physical-layout = &physical_layout0;
   };
 
   encoder_1: encoder_1 {
@@ -52,18 +50,6 @@
             RC(1, 0) RC(1, 1) RC(1, 2)
             RC(2, 0) RC(2, 1) RC(2, 2)
     >;
-  };
-
- // THÊM ĐOẠN NÀY VÀO TRONG NODE GỐC / { ... }
-  physical_layout0: physical_layout_0 {
-      compatible = "zmk,physical-layout";
-      display-name = "Default Layout";
-      transform = <&default_transform>;
-      keys = <
-          RC(0, 0) RC(0, 1) RC(0, 2)
-            RC(1, 0) RC(1, 1) RC(1, 2)
-            RC(2, 0) RC(2, 1) RC(2, 2)
-      >;
   };
 
   backlight: pwmleds {
