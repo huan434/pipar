@@ -39,3 +39,19 @@
         };
     };
 };
+/ {
+    chosen {
+        zmk,physical-layout = &physical_layout0;
+    };
+
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&default_transform>;
+        keys = <
+            &key_0_0 &key_0_1 &key_0_2
+            &key_1_0 &key_1_1 &key_1_2
+            &key_2_0 &key_2_1 &key_2_2
+        >;
+    };
+};
