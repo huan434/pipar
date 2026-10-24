@@ -60,9 +60,16 @@
       display-name = "Default Layout";
       transform = <&default_transform>;
       keys = <
-          RC(0, 0) RC(0, 1) RC(0, 2)
-          RC(1, 0) RC(1, 1) RC(1, 2)
-          RC(2, 0) RC(2, 1) RC(2, 2)
+          /* Khai báo vị trí vật lý (ví dụ: tọa độ X, Y tính bằng đơn vị cơ bản cho từng phím theo thứ tự ma trận) */
+          /* Key 0,0 */ (0) (0)
+          /* Key 0,1 */ (1) (0)
+          /* Key 0,2 */ (2) (0)
+          /* Key 1,0 */ (0) (1)
+          /* Key 1,1 */ (1) (1)
+          /* Key 1,2 */ (2) (1)
+          /* Key 2,0 */ (0) (2)
+          /* Key 2,1 */ (1) (2)
+          /* Key 2,2 */ (2) (2)
       >;
   };
 
