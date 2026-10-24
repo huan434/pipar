@@ -49,9 +49,9 @@
         display-name = "Default Layout";
         transform = <&default_transform>;
         keys = <
-            &key_0_0 &key_0_1 &key_0_2
-            &key_1_0 &key_1_1 &key_1_2
-            &key_2_0 &key_2_1 &key_2_2
+            RC(0, 0) RC(0, 1) RC(0, 2)
+            RC(1, 0) RC(1, 1) RC(1, 2)
+            RC(2, 0) RC(2, 1) RC(2, 2)
         >;
     };
 };
