@@ -18,6 +18,18 @@
         triggers-per-rotation = <24>;
     };
 
+    macros {
+        M_HE12: M_HE12 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(E) &kp TAB &kp TAB &kp H &kp U &kp Y &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp DOWN &kp C &kp K &kp H &kp TAB &kp TAB &kp TAB &kp TAB &kp MINUS &kp N1 &kp N3 &kp N2 &kp N2 &kp DOWN &kp LC(S) &kp LC(S) &kp DOWN>;
+
+            label = "M_HE12";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
