@@ -19,14 +19,122 @@
     };
 
     macros {
-        M_HE12: M_HE12 {
+        H_E12: M_HE12 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LC(E) &kp TAB &kp TAB &kp H &kp U &kp Y &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp DOWN &kp C &kp K &kp H &kp TAB &kp TAB &kp TAB &kp TAB &kp MINUS &kp N1 &kp N3 &kp N2 &kp N2 &kp DOWN &kp LC(S) &kp LC(S) &kp DOWN>;
+                <&kp LC(E)>,
+                <&macro_release>,
+                <&kp LC(E)>,
+                <&macro_wait_time 200>,
+                <&kp TAB &kp TAB &kp H &kp U &kp Y &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp DOWN &kp C &kp K &kp H &kp TAB &kp TAB &kp TAB &kp TAB &kp MINUS &kp N1 &kp N3 &kp N2 &kp N2 &kp DOWN &kp LC(S)>,
+                <&macro_wait_time 300>,
+                <&kp LC(S) &kp DOWN>;
 
             label = "M_HE12";
+        };
+
+        H_TO: M_HTO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(E)>,
+                <&macro_release>,
+                <&kp LC(E)>,
+                <&macro_wait_time 200>,
+                <&kp TAB &kp TAB &kp H &kp U &kp Y &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp DOWN &kp C &kp K &kp H &kp TAB &kp TAB &kp TAB &kp TAB &kp MINUS &kp N1 &kp NUMBER_2 &kp N2 &kp NUMBER_8 &kp DOWN &kp LC(S)>,
+                <&macro_wait_time 300>,
+                <&kp LC(S) &kp DOWN>;
+
+            label = "M_HTO";
+        };
+
+        H_HA: H_HA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(E)>,
+                <&macro_release>,
+                <&kp LC(E)>,
+                <&macro_wait_time 200>,
+                <&kp TAB &kp TAB &kp H &kp U &kp Y &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp DOWN &kp C &kp K &kp H &kp TAB &kp TAB &kp TAB &kp TAB &kp MINUS &kp N1 &kp NUMBER_1 &kp N8 &kp NUMBER_8 &kp DOWN &kp LC(S)>,
+                <&macro_wait_time 300>,
+                <&kp LC(S) &kp DOWN>;
+
+            label = "H_HA";
+        };
+
+        V_E12: V_E12 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(E)>,
+                <&macro_release>,
+                <&kp LC(E)>,
+                <&macro_wait_time 200>,
+                <&kp TAB &kp TAB &kp V &kp I &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp DOWN &kp C &kp K &kp H &kp TAB &kp TAB &kp TAB &kp TAB &kp MINUS &kp N1 &kp N3 &kp N2 &kp N2 &kp DOWN &kp LC(S)>,
+                <&macro_wait_time 300>,
+                <&kp LC(S) &kp DOWN>;
+
+            label = "V_E12";
+        };
+
+        V_TO: V_TO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(E)>,
+                <&macro_release>,
+                <&kp LC(E)>,
+                <&macro_wait_time 200>,
+                <&kp TAB &kp TAB &kp V &kp I &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp DOWN &kp C &kp K &kp H &kp TAB &kp TAB &kp TAB &kp TAB &kp MINUS &kp N1 &kp NUMBER_2 &kp N2 &kp NUMBER_8 &kp DOWN &kp LC(S)>,
+                <&macro_wait_time 300>,
+                <&kp LC(S) &kp DOWN>;
+
+            label = "V_TO";
+        };
+
+        V_HA: V_HA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(E)>,
+                <&macro_release>,
+                <&kp LC(E)>,
+                <&macro_wait_time 200>,
+                <&kp TAB &kp TAB &kp V &kp I &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp DOWN &kp C &kp K &kp H &kp TAB &kp TAB &kp TAB &kp TAB &kp MINUS &kp N1 &kp NUMBER_1 &kp N8 &kp NUMBER_8 &kp DOWN &kp LC(S)>,
+                <&macro_wait_time 300>,
+                <&kp LC(S) &kp DOWN>;
+
+            label = "V_HA";
+        };
+
+        THIEU: THIEU {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp ENTER>,
+                <&macro_wait_time 200>,
+                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp N &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp N0 &kp F5>;
+
+            label = "THIEU";
+        };
+
+        THANHTOAN: THANHTOAN {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp ENTER>,
+                <&macro_wait_time 200>,
+                <&kp F5 &kp LEFT_ARROW>;
+
+            label = "THANHTOAN";
         };
     };
 
