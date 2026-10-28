@@ -136,6 +136,73 @@
 
             label = "THANHTOAN";
         };
+
+        CHUYENKHOAN: CHUYENKHOAN {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp ENTER>,
+                <&macro_wait_time 200>,
+                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp C &kp F5>;
+
+            label = "CHUYENKHOAN";
+        };
+
+        XANG_3242: XANG3242 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(T)>,
+                <&macro_release>,
+                <&kp LC(T)>,
+                <&macro_wait_time 300>,
+                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp TAB &kp TAB &kp H &kp U &kp Y &kp TAB &kp TAB &kp LS(P) &kp E &kp T &kp R &kp O &kp L &kp I &kp M &kp E &kp X &kp X &kp TAB &kp TAB &kp TAB &kp TAB &kp C &kp H &kp I &kp MINUS &kp X &kp TAB &kp RIGHT_ARROW &kp N6 &kp N4 &kp LS(F) &kp N4 &kp MINUS &kp N3 &kp N2 &kp N4 &kp N2 &kp TAB &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
+
+            label = "XANG3242";
+        };
+
+        XANG_8841: XANG_8841 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(T)>,
+                <&macro_release>,
+                <&kp LC(T)>,
+                <&macro_wait_time 300>,
+                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp TAB &kp TAB &kp V &kp TAB &kp TAB &kp LS(P) &kp E &kp T &kp R &kp O &kp L &kp I &kp M &kp E &kp X &kp X &kp TAB &kp TAB &kp TAB &kp TAB &kp C &kp H &kp I &kp MINUS &kp X &kp TAB &kp RIGHT_ARROW &kp N6 &kp N4 &kp LS(F) &kp NUMBER_1 &kp MINUS &kp N8 &kp N8 &kp N4 &kp NUMBER_1 &kp TAB &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
+
+            label = "XANG_8841";
+        };
+
+        XANG_5061: XANG_5061 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(T)>,
+                <&macro_release>,
+                <&kp LC(T)>,
+                <&macro_wait_time 300>,
+                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp TAB &kp TAB &kp V &kp TAB &kp TAB &kp LS(P) &kp E &kp T &kp R &kp O &kp L &kp I &kp M &kp E &kp X &kp X &kp TAB &kp TAB &kp TAB &kp TAB &kp C &kp H &kp I &kp MINUS &kp X &kp TAB &kp RIGHT_ARROW &kp N6 &kp N4 &kp LS(H) &kp N5 &kp MINUS &kp N5 &kp N0 &kp NUMBER_6 &kp NUMBER_1 &kp TAB &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
+
+            label = "XANG_5061";
+        };
+
+        DAU_3648: DAU_3648 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(T)>,
+                <&macro_release>,
+                <&kp LC(T)>,
+                <&macro_wait_time 300>,
+                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp TAB &kp TAB &kp O &kp TAB &kp TAB &kp LS(P) &kp E &kp T &kp R &kp O &kp L &kp I &kp M &kp E &kp X &kp X &kp TAB &kp TAB &kp TAB &kp TAB &kp C &kp H &kp I &kp MINUS &kp X &kp T &kp TAB &kp TAB &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
+
+            label = "DAU_3648";
+        };
     };
 
     keymap {
