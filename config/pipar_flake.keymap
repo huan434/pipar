@@ -19,7 +19,7 @@
     };
 
     macros {
-        H_E12: M_HE12 {
+        H_E12: H_E12 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -32,10 +32,10 @@
                 <&macro_wait_time 300>,
                 <&kp LC(S) &kp DOWN>;
 
-            label = "M_HE12";
+            label = "H_E12";
         };
 
-        H_TO: M_HTO {
+        H_TO: H_TO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -48,7 +48,7 @@
                 <&macro_wait_time 300>,
                 <&kp LC(S) &kp DOWN>;
 
-            label = "M_HTO";
+            label = "H_TO";
         };
 
         H_HA: H_HA {
@@ -148,7 +148,7 @@
             label = "CHUYENKHOAN";
         };
 
-        XANG_3242: XANG3242 {
+        XANG_3242: XANG_3242 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -159,7 +159,7 @@
                 <&macro_wait_time 300>,
                 <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp TAB &kp TAB &kp H &kp U &kp Y &kp TAB &kp TAB &kp LS(P) &kp E &kp T &kp R &kp O &kp L &kp I &kp M &kp E &kp X &kp X &kp TAB &kp TAB &kp TAB &kp TAB &kp C &kp H &kp I &kp MINUS &kp X &kp TAB &kp RIGHT_ARROW &kp N6 &kp N4 &kp LS(F) &kp N4 &kp MINUS &kp N3 &kp N2 &kp N4 &kp N2 &kp TAB &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
 
-            label = "XANG3242";
+            label = "XANG_3242";
         };
 
         XANG_8841: XANG_8841 {
@@ -202,6 +202,21 @@
                 <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp TAB &kp TAB &kp O &kp TAB &kp TAB &kp LS(P) &kp E &kp T &kp R &kp O &kp L &kp I &kp M &kp E &kp X &kp X &kp TAB &kp TAB &kp TAB &kp TAB &kp C &kp H &kp I &kp MINUS &kp X &kp T &kp TAB &kp TAB &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
 
             label = "DAU_3648";
+        };
+
+        CHUYENVO: CHUYENVO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(T)>,
+                <&macro_release>,
+                <&kp LC(T)>,
+                <&macro_wait_time 50>,
+                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp T &kp H &kp DOWN &kp DOWN_ARROW &kp TAB &kp N6 &kp N4 &kp LS(H) &kp MINUS &kp N3 &kp N6 &kp N4 &kp N8 &kp TAB &kp O &kp TAB &kp V &kp DOWN_ARROW &kp TAB &kp TAB &kp TAB &kp LS(H) &kp LS(D) &kp SPACE &kp LS(C) &kp H &kp U &kp Y &kp E &kp E &kp R &kp N &kp SPACE &kp V &kp O &kp R &kp SPACE &kp Q &kp U &kp A &kp SPACE &kp LS(T) &kp H &kp U &kp SPACE &kp LS(N) &kp G &kp O &kp J &kp C &kp TAB &kp TAB &kp>,
+                <&macro_press>;
+
+            label = "CHUYENVO";
         };
     };
 
