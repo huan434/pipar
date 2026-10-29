@@ -262,7 +262,7 @@
             bindings = <
 &CHUYENVO  &XANG_3242  &to 2
 &LAYGAS    &XANG_8841  &bt BT_NXT
-&DAU_3648  &XANG_5061  &sys_reset
+&DAU_3648  &XANG_5061  &bootloader
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
