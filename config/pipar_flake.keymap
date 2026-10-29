@@ -192,10 +192,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 1000>,
+                <&macro_wait_time 5000>,
                 <&kp LC(T)>,
                 <&macro_wait_time 100>,
-                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp TAB &kp TAB &kp H &kp U &kp Y &kp TAB &kp TAB &kp LS(P) &kp E &kp T &kp R &kp O &kp L &kp I &kp M &kp E &kp X &kp TAB &kp TAB &kp TAB &kp TAB &kp X &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp TAB &kp RIGHT_ARROW &kp N6 &kp N4 &kp LS(F) &kp N4 &kp MINUS &kp N3 &kp N2 &kp N4 &kp N2 &kp TAB &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
+                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp TAB &kp TAB &kp H &kp U &kp Y &kp TAB &kp TAB &kp LS(P) &kp E &kp T &kp R &kp O &kp L &kp I &kp M &kp E &kp X &kp X>,
+                <&macro_wait_time 500>,
+                <&kp TAB &kp TAB &kp TAB &kp TAB &kp X &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp TAB &kp RIGHT_ARROW &kp N6 &kp N4 &kp LS(F) &kp N4 &kp MINUS &kp N3 &kp N2 &kp N4 &kp N2 &kp TAB &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
 
             label = "TESTXANG";
             wait-ms = <100>;
