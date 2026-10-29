@@ -177,47 +177,22 @@
         CHUYENVO: CHUYENVO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LC(T)>,
-                <&macro_wait_time 50>,
-                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp T &kp H &kp DOWN &kp DOWN_ARROW &kp TAB &kp N6 &kp N4 &kp LS(H) &kp MINUS &kp N3 &kp N6 &kp N4 &kp N8 &kp TAB &kp O &kp TAB &kp V &kp DOWN_ARROW &kp TAB &kp LS(C) &kp H &kp U &kp Y &kp E &kp E &kp R &kp N &kp SPACE &kp V &kp O &kp R &kp SPACE &kp Q &kp U &kp A &kp SPACE &kp LS(T) &kp H &kp U &kp SPACE &kp LS(N) &kp G &kp O &kp J &kp C &kp TAB &kp TAB &kp V &kp MINUS>;
-
+            bindings = <&kp LC(T) &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp T &kp H &kp DOWN &kp DOWN_ARROW &kp TAB &kp N6 &kp N4 &kp LS(H) &kp MINUS &kp N3 &kp N6 &kp N4 &kp N8 &kp TAB &kp O &kp TAB &kp V &kp DOWN_ARROW &kp TAB &kp LS(C) &kp H &kp U &kp Y &kp E &kp E &kp R &kp N &kp SPACE &kp V &kp O &kp R &kp SPACE &kp Q &kp U &kp A &kp SPACE &kp LS(T) &kp H &kp U &kp SPACE &kp LS(N) &kp G &kp O &kp J &kp C &kp TAB &kp TAB &kp V &kp MINUS>;
             label = "CHUYENVO";
         };
 
         LAYGAS: LAYGAS {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LC(T)>,
-                <&macro_wait_time 50>,
-                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp K &kp DOWN &kp TAB &kp K &kp TAB &kp N6 &kp N4 &kp LS(H) &kp MINUS &kp N3 &kp N6 &kp N4 &kp N8 &kp TAB &kp O &kp TAB &kp G &kp DOWN_ARROW &kp TAB &kp LS(L) &kp A &kp A &kp S &kp Y &kp SPACE &kp G &kp A &kp S &kp S &kp SPACE &kp V &kp E &kp E &kp F &kp SPACE &kp LS(T) &kp A &kp A &kp N &kp SPACE &kp LS(P) &kp H &kp A &kp S &kp T &kp TAB &kp TAB &kp G &kp MINUS>;
-
+            bindings = <&kp LC(T) &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp K &kp DOWN &kp TAB &kp K &kp TAB &kp N6 &kp N4 &kp LS(H) &kp MINUS &kp N3 &kp N6 &kp N4 &kp N8 &kp TAB &kp O &kp TAB &kp G &kp DOWN_ARROW &kp TAB &kp LS(L) &kp A &kp A &kp S &kp Y &kp SPACE &kp G &kp A &kp S &kp S &kp SPACE &kp V &kp E &kp E &kp F &kp SPACE &kp LS(T) &kp A &kp A &kp N &kp SPACE &kp LS(P) &kp H &kp A &kp S &kp T &kp TAB &kp TAB &kp G &kp MINUS>;
             label = "LAYGAS";
         };
 
-        Test: Test {
+        testxang: testxang {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LC(T)>,
-                <&macro_wait_time 50>,
-                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp T &kp H &kp DOWN &kp DOWN_ARROW &kp TAB &kp N6 &kp N4 &kp LS(H) &kp MINUS &kp N3 &kp N6 &kp N4 &kp N8 &kp TAB &kp O &kp TAB &kp V &kp DOWN_ARROW &kp TAB &kp LS(C) &kp H &kp U &kp Y &kp E &kp E &kp R &kp N &kp SPACE &kp V &kp O &kp R &kp SPACE &kp Q &kp U &kp A &kp SPACE &kp LS(T) &kp H &kp U &kp SPACE &kp LS(N) &kp G &kp O &kp J &kp C &kp TAB &kp TAB &kp V &kp MINUS>;
-
-            label = "TEST";
-        };
-
-        test2: test2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LC(E)>,
-                <&macro_wait_time 50>,
-                <&kp TAB &kp TAB &kp H &kp U &kp Y &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp DOWN &kp C &kp K &kp H &kp TAB &kp TAB &kp TAB &kp TAB &kp MINUS &kp N1 &kp N3 &kp N2 &kp N2 &kp DOWN &kp LC(S)>,
-                <&macro_wait_time 50>,
-                <&kp LC(S) &kp DOWN>;
-
-            label = "TEST2";
+            bindings = <&kp LC(T) &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp TAB &kp TAB &kp H &kp U &kp Y &kp TAB &kp TAB &kp LS(P) &kp E &kp T &kp R &kp O &kp L &kp I &kp M &kp E &kp X &kp X &kp TAB &kp TAB &kp TAB &kp TAB &kp C &kp H &kp I &kp MINUS &kp X &kp TAB &kp RIGHT_ARROW &kp N6 &kp N4 &kp LS(F) &kp N4 &kp MINUS &kp N3 &kp N2 &kp N4 &kp N2 &kp TAB &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
+            label = "TESTXANG";
         };
     };
 
@@ -258,12 +233,12 @@
 
         thanhtoan_layer {
             bindings = <
-&THIEU        &kp PRINTSCREEN  &to 0
-&CHUYENKHOAN  &kp HOME         &bt BT_NXT
-&THANHTOAN    &kp END          &sys_reset
+&THIEU        &testxang  &to 0
+&CHUYENKHOAN  &kp HOME   &bt BT_NXT
+&THANHTOAN    &kp END    &sys_reset
             >;
 
-            label = "thanh_toan";
+            label = "ThanhToan";
         };
     };
 };
