@@ -248,9 +248,9 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LC(E)>,
-                <&macro_wait_time 200>,
+                <&macro_wait_time 50>,
                 <&kp TAB &kp TAB &kp H &kp U &kp Y &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp DOWN &kp C &kp K &kp H &kp TAB &kp TAB &kp TAB &kp TAB &kp MINUS &kp N1 &kp N3 &kp N2 &kp N2 &kp DOWN &kp LC(S)>,
-                <&macro_wait_time 300>,
+                <&macro_wait_time 50>,
                 <&kp LC(S) &kp DOWN>;
 
             label = "TEST2";
