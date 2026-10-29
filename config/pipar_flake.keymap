@@ -242,6 +242,19 @@
 
             label = "TEST";
         };
+
+        test2: test2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LC(E)>,
+                <&macro_wait_time 200>,
+                <&kp TAB &kp TAB &kp H &kp U &kp Y &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp DOWN &kp C &kp K &kp H &kp TAB &kp TAB &kp TAB &kp TAB &kp MINUS &kp N1 &kp N3 &kp N2 &kp N2 &kp DOWN &kp LC(S)>,
+                <&macro_wait_time 300>,
+                <&kp LC(S) &kp DOWN>;
+
+            label = "TEST2";
+        };
     };
 
     keymap {
@@ -281,8 +294,8 @@
 
         layer_2 {
             bindings = <
-&Test       &kp PRINTSCREEN  &to 0
-&kp INS     &kp HOME         &kp LC(C)
+&test2      &kp PRINTSCREEN  &to 0
+&Test       &kp HOME         &kp LC(C)
 &kp DELETE  &kp END          &kp LC(V)
             >;
         };
