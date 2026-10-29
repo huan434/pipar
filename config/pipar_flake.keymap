@@ -231,6 +231,17 @@
 
             label = "LAYGAS";
         };
+
+        Test: Test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LC(T)>,
+                <&macro_wait_time 50>,
+                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp T &kp H &kp DOWN &kp DOWN_ARROW &kp TAB &kp N6 &kp N4 &kp LS(H) &kp MINUS &kp N3 &kp N6 &kp N4 &kp N8 &kp TAB &kp O &kp TAB &kp V &kp DOWN_ARROW &kp TAB &kp LS(C) &kp H &kp U &kp Y &kp E &kp E &kp R &kp N &kp SPACE &kp V &kp O &kp R &kp SPACE &kp Q &kp U &kp A &kp SPACE &kp LS(T) &kp H &kp U &kp SPACE &kp LS(N) &kp G &kp O &kp J &kp C &kp TAB &kp TAB &kp V &kp MINUS>;
+
+            label = "TEST";
+        };
     };
 
     keymap {
@@ -270,9 +281,9 @@
 
         layer_2 {
             bindings = <
-&kp C_PAUSE  &kp PRINTSCREEN  &to 0
-&kp INS      &kp HOME         &kp LC(C)
-&kp DELETE   &kp END          &kp LC(V)
+&Test       &kp PRINTSCREEN  &to 0
+&kp INS     &kp HOME         &kp LC(C)
+&kp DELETE  &kp END          &kp LC(V)
             >;
         };
     };
