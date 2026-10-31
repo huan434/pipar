@@ -155,12 +155,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LC(T)>,
+                <&kp LC(T) &kp TAB>,
                 <&macro_wait_time 100>,
-                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp LS(H) &kp U &kp Y &kp TAB &kp SPACE &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp MINUS &kp X &kp TAB &kp RIGHT_ARROW &kp NUMBER_6 &kp NUMBER_4 &kp LS(F) &kp NUMBER_4 &kp MINUS &kp NUMBER_3 &kp NUMBER_2 &kp NUMBER_4 &kp NUMBER_2 &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
+                <&kp TAB &kp TAB &kp TAB &kp TAB &kp LS(H) &kp U &kp Y &kp TAB &kp SPACE &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp MINUS &kp X &kp TAB &kp RIGHT_ARROW &kp NUMBER_6 &kp NUMBER_4 &kp LS(F) &kp NUMBER_4 &kp MINUS &kp NUMBER_3 &kp NUMBER_2 &kp NUMBER_4 &kp NUMBER_2 &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
 
             label = "XANG_3242";
-            wait-ms = <200>;
+            wait-ms = <500>;
             tap-ms = <0>;
         };
 
@@ -173,7 +173,7 @@
                 <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp LS(V) &kp I &kp E &kp E &kp J &kp T &kp TAB &kp SPACE &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp MINUS &kp X &kp TAB &kp RIGHT_ARROW &kp NUMBER_6 &kp NUMBER_4 &kp LS(F) &kp NUMBER_1 &kp MINUS &kp NUMBER_8 &kp NUMBER_8 &kp NUMBER_4 &kp NUMBER_1 &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
 
             label = "XANG_8841";
-            wait-ms = <200>;
+            wait-ms = <500>;
             tap-ms = <0>;
         };
 
@@ -186,7 +186,7 @@
                 <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp LS(V) &kp I &kp E &kp E &kp J &kp T &kp TAB &kp SPACE &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp MINUS &kp X &kp TAB &kp RIGHT_ARROW &kp NUMBER_6 &kp NUMBER_4 &kp LS(H) &kp NUMBER_5 &kp MINUS &kp NUMBER_5 &kp NUMBER_0 &kp NUMBER_6 &kp NUMBER_1 &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
 
             label = "XANG_5061";
-            wait-ms = <200>;
+            wait-ms = <500>;
             tap-ms = <0>;
         };
 
@@ -199,20 +199,16 @@
                 <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp LS(O) &kp A &kp S &kp N &kp H &kp TAB &kp SPACE &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp MINUS &kp X &kp T &kp TAB &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
 
             label = "DAU_3648";
-            wait-ms = <200>;
+            wait-ms = <500>;
             tap-ms = <0>;
         };
 
         Test: Test {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LC(T)>,
-                <&macro_wait_time 100>,
-                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp C &kp DOWN &kp TAB &kp NUMBER_6 &kp NUMBER_4 &kp LS(H) &kp MINUS &kp NUMBER_3 &kp NUMBER_6 &kp NUMBER_4 &kp NUMBER_8 &kp TAB &kp O &kp TAB &kp V &kp DOWN_ARROW &kp TAB &kp LS(C) &kp H &kp U &kp Y &kp E &kp E &kp SPACE &kp LS(N) &kp G &kp O &kp J &kp C &kp TAB &kp TAB &kp V &kp MINUS>;
-
+            bindings = <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp C &kp DOWN &kp TAB &kp NUMBER_6 &kp NUMBER_4 &kp LS(H) &kp MINUS &kp NUMBER_3 &kp NUMBER_6 &kp NUMBER_4 &kp NUMBER_8 &kp TAB &kp O &kp TAB &kp V &kp DOWN_ARROW &kp TAB &kp RIGHT_ARROW &kp LS(N) &kp G &kp O &kp J &kp C &kp TAB &kp TAB &kp V &kp MINUS>;
             label = "TEST";
-            wait-ms = <200>;
+            wait-ms = <100>;
         };
     };
 
@@ -244,8 +240,8 @@
             display-name = "chi_xang";
             bindings = <
 &Xang_3242  &Dau_3648  &to 2
-&Xang_8841  &CHUYENVO  &bt BT_NXT
-&Xang_5061  &LAYGAS    &bootloader
+&Xang_8841  &CHUYENVO  &none
+&Xang_5061  &LAYGAS    &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -253,9 +249,9 @@
 
         thanhtoan_layer {
             bindings = <
-&THIEU        &Test     &to 0
-&CHUYENKHOAN  &kp HOME  &bt BT_NXT
-&THANHTOAN    &kp END   &sys_reset
+&THIEU        &Test  &to 0
+&CHUYENKHOAN  &none  &bt BT_NXT
+&THANHTOAN    &none  &sys_reset
             >;
 
             label = "ThanhToan";
