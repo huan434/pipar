@@ -216,8 +216,8 @@
             display-name = "default";
             bindings = <
 &H_E12  &V_E12  &to 1
-&H_TO   &V_TO   &CHUYENKHOAN
-&H_HA   &V_HA   &THANHTOAN
+&H_TO   &V_TO   &none
+&H_HA   &V_HA   &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -231,9 +231,9 @@
 
             display-name = "chi_xang";
             bindings = <
-&XANG_3242  &DAU_3648  &to 2
-&XANG_8841  &CHUYENVO  &bt BT_NXT
-&XANG_5061  &LAYGAS    &bootloader
+&Xang_3242  &Dau_3648  &to 2
+&Xang_8841  &CHUYENVO  &bt BT_NXT
+&Xang_5061  &LAYGAS    &bootloader
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -241,9 +241,9 @@
 
         thanhtoan_layer {
             bindings = <
-&THIEU        &testxang  &to 0
-&CHUYENKHOAN  &kp HOME   &bt BT_NXT
-&THANHTOAN    &kp END    &sys_reset
+&THIEU        &studio_unlock  &to 0
+&CHUYENKHOAN  &kp HOME        &bt BT_NXT
+&THANHTOAN    &kp END         &sys_reset
             >;
 
             label = "ThanhToan";
