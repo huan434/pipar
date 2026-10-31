@@ -97,7 +97,7 @@
             bindings =
                 <&kp ENTER>,
                 <&macro_wait_time 100>,
-                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp N &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp N0 &kp F5>;
+                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp N &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp N0 &kp F5 &kp LEFT_ARROW>;
 
             label = "THIEU";
             wait-ms = <200>;
