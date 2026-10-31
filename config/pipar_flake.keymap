@@ -95,9 +95,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp ENTER>,
+                <&kp ENTER &kp TAB>,
                 <&macro_wait_time 100>,
-                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp N &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp N0 &kp F5 &kp LEFT_ARROW>;
+                <&kp TAB &kp TAB &kp TAB &kp TAB &kp N &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp N0 &kp F5 &kp LEFT_ARROW>;
 
             label = "THIEU";
             wait-ms = <200>;
@@ -106,11 +106,7 @@
         THANHTOAN: THANHTOAN {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp ENTER>,
-                <&macro_wait_time 100>,
-                <&kp F5 &kp LEFT_ARROW>;
-
+            bindings = <&kp ENTER &kp F5 &kp LEFT_ARROW>;
             label = "THANHTOAN";
             wait-ms = <200>;
         };
@@ -119,9 +115,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp ENTER>,
+                <&kp ENTER &kp TAB>,
                 <&macro_wait_time 100>,
-                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp C &kp F5>;
+                <&kp TAB &kp TAB &kp TAB &kp TAB &kp C &kp F5 &kp LEFT_ARROW>;
 
             label = "CHUYENKHOAN";
             wait-ms = <200>;
@@ -157,10 +153,10 @@
             bindings =
                 <&kp LC(T) &kp TAB>,
                 <&macro_wait_time 100>,
-                <&kp TAB &kp TAB &kp TAB &kp TAB &kp LS(H) &kp U &kp Y &kp TAB &kp SPACE &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp MINUS &kp X &kp TAB &kp RIGHT_ARROW &kp NUMBER_6 &kp NUMBER_4 &kp LS(F) &kp NUMBER_4 &kp MINUS &kp NUMBER_3 &kp NUMBER_2 &kp NUMBER_4 &kp NUMBER_2 &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
+                <&kp TAB &kp TAB &kp TAB &kp TAB &kp SPACE &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp LS(H) &kp U &kp Y &kp TAB &kp MINUS &kp X &kp TAB &kp RIGHT_ARROW &kp NUMBER_6 &kp NUMBER_4 &kp LS(F) &kp NUMBER_4 &kp MINUS &kp NUMBER_3 &kp NUMBER_2 &kp NUMBER_4 &kp NUMBER_2 &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
 
             label = "XANG_3242";
-            wait-ms = <500>;
+            wait-ms = <700>;
             tap-ms = <0>;
         };
 
@@ -168,12 +164,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LC(T)>,
+                <&kp LC(T) &kp TAB>,
                 <&macro_wait_time 100>,
-                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp LS(V) &kp I &kp E &kp E &kp J &kp T &kp TAB &kp SPACE &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp MINUS &kp X &kp TAB &kp RIGHT_ARROW &kp NUMBER_6 &kp NUMBER_4 &kp LS(F) &kp NUMBER_1 &kp MINUS &kp NUMBER_8 &kp NUMBER_8 &kp NUMBER_4 &kp NUMBER_1 &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
+                <&kp TAB &kp TAB &kp TAB &kp TAB &kp SPACE &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp LS(V) &kp I &kp E &kp E &kp J &kp T &kp TAB &kp MINUS &kp X &kp TAB &kp RIGHT_ARROW &kp NUMBER_6 &kp NUMBER_4 &kp LS(F) &kp NUMBER_1 &kp MINUS &kp NUMBER_8 &kp NUMBER_8 &kp NUMBER_4 &kp NUMBER_1 &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
 
             label = "XANG_8841";
-            wait-ms = <500>;
+            wait-ms = <700>;
             tap-ms = <0>;
         };
 
@@ -181,12 +177,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LC(T)>,
+                <&kp LC(T) &kp TAB>,
                 <&macro_wait_time 100>,
-                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp LS(V) &kp I &kp E &kp E &kp J &kp T &kp TAB &kp SPACE &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp MINUS &kp X &kp TAB &kp RIGHT_ARROW &kp NUMBER_6 &kp NUMBER_4 &kp LS(H) &kp NUMBER_5 &kp MINUS &kp NUMBER_5 &kp NUMBER_0 &kp NUMBER_6 &kp NUMBER_1 &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
+                <&kp TAB &kp TAB &kp TAB &kp TAB &kp SPACE &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp LS(V) &kp I &kp E &kp E &kp J &kp T &kp TAB &kp MINUS &kp X &kp TAB &kp RIGHT_ARROW &kp NUMBER_6 &kp NUMBER_4 &kp LS(H) &kp NUMBER_5 &kp MINUS &kp NUMBER_5 &kp NUMBER_0 &kp NUMBER_6 &kp NUMBER_1 &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
 
             label = "XANG_5061";
-            wait-ms = <500>;
+            wait-ms = <700>;
             tap-ms = <0>;
         };
 
@@ -194,19 +190,19 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LC(T)>,
+                <&kp LC(T) &kp TAB>,
                 <&macro_wait_time 100>,
-                <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp LS(O) &kp A &kp S &kp N &kp H &kp TAB &kp SPACE &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp MINUS &kp X &kp T &kp TAB &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
+                <&kp TAB &kp TAB &kp TAB &kp TAB &kp SPACE &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp LS(O) &kp A &kp S &kp N &kp H &kp TAB &kp MINUS &kp X &kp T &kp TAB &kp TAB &kp LS(H) &kp LS(D) &kp SPACE>;
 
             label = "DAU_3648";
-            wait-ms = <500>;
+            wait-ms = <700>;
             tap-ms = <0>;
         };
 
         Test: Test {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp C &kp DOWN &kp TAB &kp NUMBER_6 &kp NUMBER_4 &kp LS(H) &kp MINUS &kp NUMBER_3 &kp NUMBER_6 &kp NUMBER_4 &kp NUMBER_8 &kp TAB &kp O &kp TAB &kp V &kp DOWN_ARROW &kp TAB &kp RIGHT_ARROW &kp LS(N) &kp G &kp O &kp J &kp C &kp TAB &kp TAB &kp V &kp MINUS>;
+            bindings = <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp C &kp DOWN &kp TAB &kp NUMBER_6 &kp NUMBER_4 &kp LS(H) &kp MINUS &kp NUMBER_3 &kp NUMBER_6 &kp NUMBER_4 &kp NUMBER_8 &kp TAB &kp O &kp TAB &kp V &kp DOWN_ARROW &kp TAB &kp TAB &kp TAB &kp V &kp MINUS>;
             label = "TEST";
             wait-ms = <100>;
         };
