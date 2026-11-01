@@ -106,15 +106,19 @@
                 <&kp TAB &kp TAB &kp TAB &kp TAB &kp N &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp NUMBER_0 &kp F5 &kp LEFT_ARROW>;
 
             label = "THIEU";
-            wait-ms = <300>;
+            wait-ms = <400>;
         };
 
         THANHTOAN: THANHTOAN {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ENTER &kp F5 &kp LEFT_ARROW>;
+            bindings =
+                <&kp ENTER>,
+                <&macro_wait_time 200>,
+                <&kp F5 &kp LEFT_ARROW>;
+
             label = "THANHTOAN";
-            wait-ms = <300>;
+            wait-ms = <400>;
         };
 
         CHUYENKHOAN: CHUYENKHOAN {
@@ -126,7 +130,7 @@
                 <&kp TAB &kp TAB &kp TAB &kp TAB &kp C &kp F5 &kp LEFT_ARROW>;
 
             label = "CHUYENKHOAN";
-            wait-ms = <300>;
+            wait-ms = <400>;
         };
 
         Chuyen_vo: Chuyen_vo {
@@ -147,13 +151,13 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LC(T) &kp TAB>,
-                <&macro_wait_time 100>,
+                <&macro_wait_time 150>,
                 <&kp TAB &kp TAB &kp TAB &kp TAB &kp SPACE &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp LS(H) &kp U &kp RETURN &kp MINUS &kp X>,
                 <&macro_wait_time 300>,
                 <&kp TAB &kp X &kp G &kp LS(F) &kp NUMBER_4 &kp RETURN &kp LS(H) &kp LS(D) &kp D &kp SPACE>;
 
             label = "XANG_3242";
-            wait-ms = <700>;
+            wait-ms = <800>;
             tap-ms = <0>;
         };
 
@@ -162,13 +166,13 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LC(T) &kp TAB>,
-                <&macro_wait_time 100>,
+                <&macro_wait_time 150>,
                 <&kp TAB &kp TAB &kp TAB &kp TAB &kp SPACE &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp LS(V) &kp I &kp E &kp RETURN &kp MINUS &kp X>,
                 <&macro_wait_time 300>,
                 <&kp TAB &kp X &kp G &kp LS(F) &kp NUMBER_1 &kp RETURN &kp LS(H) &kp LS(D) &kp D &kp SPACE>;
 
             label = "XANG_8841";
-            wait-ms = <700>;
+            wait-ms = <800>;
             tap-ms = <0>;
         };
 
@@ -177,13 +181,13 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LC(T) &kp TAB>,
-                <&macro_wait_time 100>,
+                <&macro_wait_time 150>,
                 <&kp TAB &kp TAB &kp TAB &kp TAB &kp SPACE &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp LS(V) &kp I &kp E &kp RETURN &kp MINUS &kp X>,
                 <&macro_wait_time 300>,
                 <&kp TAB &kp X &kp G &kp LS(H) &kp NUMBER_5 &kp RETURN &kp LS(H) &kp LS(D) &kp D &kp SPACE>;
 
             label = "Xang_5061";
-            wait-ms = <700>;
+            wait-ms = <800>;
             tap-ms = <0>;
         };
 
@@ -192,13 +196,13 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LC(T) &kp TAB>,
-                <&macro_wait_time 100>,
+                <&macro_wait_time 150>,
                 <&kp TAB &kp TAB &kp TAB &kp TAB &kp SPACE &kp TAB &kp T &kp P &kp DOWN &kp TAB &kp LS(O) &kp A &kp RETURN &kp MINUS &kp X>,
                 <&macro_wait_time 300>,
                 <&kp TAB &kp X &kp G &kp LS(H) &kp RETURN &kp LS(H) &kp LS(D) &kp D &kp SPACE>;
 
             label = "DAU_3648";
-            wait-ms = <700>;
+            wait-ms = <800>;
             tap-ms = <0>;
         };
 
@@ -208,7 +212,7 @@
             bindings =
                 <&kp LC(T) &kp TAB>,
                 <&macro_wait_time 200>,
-                <&kp TAB &kp TAB &kp TAB &kp TAB &kp K &kp DOWN_ARROW &kp TAB &kp K &kp TAB &kp N6 &kp N4 &kp LS(H) &kp RETURN &kp TAB &kp O &kp RETURN &kp G &kp DOWN_ARROW &kp TAB &kp C &kp K &kp G &kp RETURN &kp RETURN &kp G &kp MINUS>;
+                <&kp TAB &kp TAB &kp TAB &kp K &kp DOWN_ARROW &kp TAB &kp K &kp TAB &kp N6 &kp N4 &kp LS(H) &kp RETURN &kp TAB &kp O &kp RETURN &kp G &kp DOWN_ARROW &kp TAB &kp C &kp K &kp G &kp RETURN &kp RETURN &kp G &kp MINUS>;
 
             label = "Lay_gas";
             tap-ms = <0>;
